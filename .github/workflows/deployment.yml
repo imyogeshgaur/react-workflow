@@ -42,6 +42,19 @@ jobs:
       - name: Username Authentication On Github
         run : git config --global user.name "imyogeshgaur"
       
+      # Git Processes 
+      - name: Git add
+        run : git add .
+      
+      - name: Git Commit
+        run: git commit -m "done"
+        
+      - name: Git add remote
+        run: git remote add origin https://github.com/imyogeshgaur/react-workflow.git
+        
+      - name: Git push
+        run: git push -u origin master
+      
       # Deployment On Github
       - name: Do Deployment On Github
         run: npm run deploy
