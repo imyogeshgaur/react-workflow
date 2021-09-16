@@ -34,10 +34,13 @@ jobs:
       - name: Create Build
         run : npm run build
       
-      # Github Authentication
-      - name: Authenticate on Github
-        run : git config --global user.email "yogeshgaur1995@gmail.com",
-              git config --global user.name "imyogeshgaur"
+      # Github Email Authentication
+      - name: Email Authenticate on Github
+        run : git config --global user.email "yogeshgaur1995@gmail.com"
+              
+      # Github Username Authentication
+      - name: Username Authentication On Github
+        run : git config --global user.name "imyogeshgaur"
       
       # Deployment On Github
       - name: Do Deployment On Github
